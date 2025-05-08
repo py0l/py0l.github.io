@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.js --env production",
     "start": "webpack serve --config webpack.config.js",
-    "check-type": "tsc --noEmit"
+    "check-type": "tsc --noEmit",
+    "export": "npm run build && npm run export && touch ./out/.nojekyll"
   },
   "keywords": [],
   "author": "",
